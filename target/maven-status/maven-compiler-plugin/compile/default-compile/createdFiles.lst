@@ -1,4 +1,4 @@
 org\example\dao\Employee.class
-org\example\utils\SessionUtil.class
 org\example\dao\EmployeeDAO.class
 org\example\MyResource.class
+org\example\dao\SessionUtil.class

@@ -4,12 +4,19 @@ import org.example.dao.Employee;
 import org.example.dao.EmployeeDAO;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
 
-@Path("myresource")
+@Path("employees")
 public class MyResource {
+
+//    @GET
+//    @Produces(MediaType.TEXT_PLAIN)
+//    public String getIt() {
+//        return "Got it!";
+//    }
 
     @GET
     @Produces("application/json")
