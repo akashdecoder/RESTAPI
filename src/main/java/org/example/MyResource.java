@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 
-@Path("employees")
+@Path("")
 public class MyResource {
 
 //    @GET
