@@ -12,12 +12,6 @@ import java.util.List;
 @Path("")
 public class MyResource {
 
-//    @GET
-//    @Produces(MediaType.TEXT_PLAIN)
-//    public String getIt() {
-//        return "Got it!";
-//    }
-
     @GET
     @Produces("application/json")
     public List<Employee> getEmployee() {
