@@ -24,6 +24,7 @@ public class MyResource {
     @POST
     @Path("/create")
     @Consumes("application/json")
+    @Produces("application/json")
     public Response addEmployee(Employee emp){
         emp.setName(emp.getName());
         emp.setAge(emp.getAge());
