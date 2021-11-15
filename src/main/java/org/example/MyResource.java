@@ -1,18 +1,23 @@
 package org.example;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 import org.example.dao.Employee;
 import org.example.dao.EmployeeDAO;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
 
-@Path("")
+@Path("/jersey")
+@Api("/REST API")
+@SwaggerDefinition(tags = {@Tag(name = "REST API", description = "REST Endpoint for RESTAPI")})
 public class MyResource {
 
     @GET
+    @Path("/employess")
     @Produces("application/json")
     public List<Employee> getEmployee() {
         EmployeeDAO dao = new EmployeeDAO();
