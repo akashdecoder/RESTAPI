@@ -1,4 +1,5 @@
-org\example\dao\Employee.class
-org\example\dao\EmployeeDAO.class
-org\example\MyResource.class
-org\example\dao\SessionUtil.class
+org/example/dao/EmployeeDAO.class
+org/example/dao/SessionUtil.class
+org/example/dao/Employee.class
+org/example/servlet/SwaggerConfigurationServlet.class
+org/example/MyResource.class
