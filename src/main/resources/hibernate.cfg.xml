@@ -5,13 +5,13 @@
     <session-factory name="hibernateSessionFactory">
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.password">8d6129fe9ecc093609f60b624c918cf0c0ce035d5bc3afe3295cec5c673c40a9</property>
-        <property name="hibernate.connection.url">postgres://tebpmpdhmvrcju:8d6129fe9ecc093609f60b624c918cf0c0ce035d5bc3afe3295cec5c673c40a9@ec2-34-203-114-67.compute-1.amazonaws.com:5432/d4e7bcgpqhrkdh
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-34-203-114-67.compute-1.amazonaws.com:5432/d4e7bcgpqhrkdh
         </property>
         <property name="hibernate.connection.username">tebpmpdhmvrcju</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
-        <!--   <property name="hibernate.hbm2ddl.auto">create</property> -->
+       <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="org.example.dao.Employee"/>
     </session-factory>
 </hibernate-configuration>
