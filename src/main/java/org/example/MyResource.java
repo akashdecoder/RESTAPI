@@ -1,8 +1,4 @@
 package org.example;
-
-import io.swagger.annotations.Api;
-import io.swagger.annotations.SwaggerDefinition;
-import io.swagger.annotations.Tag;
 import org.example.dao.Employee;
 import org.example.dao.EmployeeDAO;
 
@@ -12,8 +8,6 @@ import java.util.List;
 
 
 @Path("/jersey")
-@Api("/REST API")
-@SwaggerDefinition(tags = {@Tag(name = "REST API", description = "REST Endpoint for RESTAPI")})
 public class MyResource {
 
     @GET
